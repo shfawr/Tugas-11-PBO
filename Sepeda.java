@@ -1,21 +1,20 @@
 
 /**
- * Write a description of class Motor here.
+ * Write a description of class Sepeda here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Motor extends Kendaraan {
-    private int jumlahRoda;
+public class Sepeda extends Kendaraan {
+    private String jenisSepeda;
 
-    public Motor(String merk, String model, int tahunProduksi, int jumlahRoda) {
+    public Sepeda(String merk, String model, int tahunProduksi, String jenisSepeda) {
         super(merk, model, tahunProduksi);
-        this.jumlahRoda = jumlahRoda;
+        this.jenisSepeda = jenisSepeda;
     }
 
     @Override
     public String getInfo() {
-        return "Motor: " + super.getInfo() + ", Roda: " + jumlahRoda;
+        return "Sepeda: " + super.getInfo() + ", Jenis: " + jenisSepeda;
     }
 }
-
